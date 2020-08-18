@@ -12,8 +12,6 @@ export default function App() {
   const intervalRef = useRef(null);
 
   function startTimer() {
-    if(intervalRef.current != null) return;
-
     setTitle('You\'re doing great!')
     setIsRunning(true)
 
@@ -28,8 +26,6 @@ export default function App() {
   }
 
   function stopTimer() {
-    if(intervalRef.current == null) return;
-
     clearInterval(intervalRef.current);
     setTitle('Keep it Up!')
     setIsRunning(false)
