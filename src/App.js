@@ -6,7 +6,6 @@ function padTime(time) {
 }
 
 export default function App() {
-  const [ title, setTitle ] = useState('Pomodoro!');
   const [ timeLeft, setTimeLeft ] = useState(10);
 
   function startTimer() {
@@ -24,7 +23,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <h2>{ title }</h2>
+      <h2>Pomodoro</h2>
 
       <div className="timer">
         <span>{ minutes }</span>
